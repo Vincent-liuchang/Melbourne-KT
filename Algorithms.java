@@ -1,5 +1,3 @@
-package sthforyourself;
-
 public class Algorithms {
 	
 	
@@ -50,7 +48,7 @@ public class Algorithms {
 	public static void main(String args[]){
 		Algorithms al = new Algorithms();
 		System.out.println(al.Ged("lended", "deaden"));
-		//´ó¸Å¾ÍÊÇÄãÔÚÕâÀïÊäÈëÁ½¸öµ¥´Ê£¬¾Í»á¸øÄã´ò·ÖÕâÁ½¸öµ¥´ÊµÄÏàËÆ³Ì¶È È»ºóÓĞÁ½¸ö´ò·Ö·½·¨ led ºÍged
+		//å¤§æ¦‚å°±æ˜¯ä½ åœ¨è¿™é‡Œè¾“å…¥ä¸¤ä¸ªå•è¯ï¼Œå°±ä¼šç»™ä½ æ‰“åˆ†è¿™ä¸¤ä¸ªå•è¯çš„ç›¸ä¼¼ç¨‹åº¦ ç„¶åæœ‰ä¸¤ä¸ªæ‰“åˆ†æ–¹æ³• led å’Œged
 	}
 
 }
