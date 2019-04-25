@@ -1,3 +1,8 @@
+package sthforyourself;
+
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+
 public class Algorithms {
 	
 	
@@ -47,8 +52,97 @@ public class Algorithms {
 	
 	public static void main(String args[]){
 		Algorithms al = new Algorithms();
-		System.out.println(al.Ged("lended", "deaden"));
-		//å¤§æ¦‚å°±æ˜¯ä½ åœ¨è¿™é‡Œè¾“å…¥ä¸¤ä¸ªå•è¯ï¼Œå°±ä¼šç»™ä½ æ‰“åˆ†è¿™ä¸¤ä¸ªå•è¯çš„ç›¸ä¼¼ç¨‹åº¦ ç„¶åæœ‰ä¸¤ä¸ªæ‰“åˆ†æ–¹æ³• led å’Œged
-	}
 
+		System.out.println(al.Ged("cratdsa","car"));
+		System.out.println(al.soundex("xxx,,y,yx?."));
+		//´ó¸Å¾ÍÊÇÄãÔÚÕâÀïÊäÈëÁ½¸öµ¥´Ê£¬¾Í»á¸øÄã´ò·ÖÕâÁ½¸öµ¥´ÊµÄÏàËÆ³Ì¶È È»ºóÓĞÁ½¸ö´ò·Ö·½·¨ led ºÍged
+	}
+	
+	
+	public int twogram(String inputstring, String checkstring){
+		String a[] = new String[inputstring.length()-1];
+		String b[] = new String[checkstring.length()-1];
+		int count = 0;
+		
+		for(int i = 0; i < inputstring.length()-1; i++){
+			a[i] = String.valueOf(inputstring.charAt(i))+inputstring.charAt(i+1);
+		}
+		for(int j = 0; j < checkstring.length()-1; j++){
+			b[j] = String.valueOf(checkstring.charAt(j))+checkstring.charAt(j+1);
+		}
+		
+		for(String x:a){
+			for(int i = 0; i < b.length; i++){
+				if(x.equals(b[i])){
+					count++;
+					b[i] = null;
+					break;
+				}
+			}
+		}
+		return (a.length + b.length - 2 * count);
+	}
+	
+	public String soundex(String inputstring){
+		char[] input = inputstring.toCharArray();
+		ArrayList<String> output = new ArrayList<String>();
+		String previous  = null;
+		
+		for(int i = 0; i< inputstring.length(); i++){
+			String s = charconvert(input[i]);
+			if(s.equals("x"))
+				continue;
+			if(previous == null){
+				output.add(String.valueOf(input[i]));
+				previous = "one";
+				continue;
+				}
+			else if(!s.equals("0") && !s.equals(previous))
+				output.add(s);
+			previous = s;
+		}
+		previous ="";
+		for(String a: output){
+			previous = previous + a; 
+		}
+		return previous;
+	
+	}
+	
+	public String charconvert(char input){
+		char[] zero = {'a','e','i','o','u','w','h','y'};
+		char[] one = {'f','p','v','b',};
+		char[] two = {'c','g','j','k','q','s','x','z'};
+		char[] three = {'d','t'};
+		char[] four = {'i'};
+		char[] five = {'m','n'};
+		char[] six = {'6'};
+		
+		if(contains(input,zero))
+			return "0";
+		else if(contains(input,one))
+			return "1";
+		else if(contains(input,two))
+			return "2";
+		else if(contains(input,three))
+			return "3";
+		else if(contains(input,four))
+			return "4";
+		else if(contains(input,five))
+			return "5";
+		else if(contains(input,six))
+			return "6";
+		else 
+			return "x";
+	}
+	
+	public boolean contains(char x,char [] a){
+		for(char y : a){
+			if(y == x)
+				return true;
+		}
+		return false;
+		
+	}
+	
 }
