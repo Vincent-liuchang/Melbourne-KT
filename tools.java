@@ -1,4 +1,3 @@
-package sthforyourself;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -149,7 +148,7 @@ public class tools {
     public ArrayList<String> read(String filepath) throws IOException{
     	FileReader fr = new FileReader(filepath);
 		BufferedReader bf = new BufferedReader(fr);
-		
+				
 		ArrayList<String> misspell = new ArrayList<String>();
 		
 		String line = bf.readLine();
@@ -158,28 +157,89 @@ public class tools {
 			misspell.add(line);
 			line = bf.readLine();
 		}
+		bf.close();
 		return misspell;
     }
     
-    public void go(){
+    public void go3(){
     	try {
-			ArrayList<String> misspell = this.read("C:\\Users\\³©\\Downloads\\ktwork\\misspell.txt");
-			ArrayList<String> correct = this.read("C:\\Users\\³©\\Downloads\\ktwork\\correct.txt");
-	    	ArrayList<String> dict = this.read("C:\\Users\\³©\\Downloads\\ktwork\\dict.txt");
+			ArrayList<String> misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
+			ArrayList<String> correct = this.read("C:\\Users\\cliu20\\Downloads\\correct.txt");
+	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
 	    	
 //	    	ArrayList<String> ged_result = this.geo(misspell, correct, dict);
 //	    	ArrayList<String> ngram_result = this.ngram(misspell, correct, dict);
 	    	ArrayList<String> soundex_result = this.sdex(misspell, correct, dict);
 	    	
 	    	
+	    	File result = new File("C:\\Users\\cliu20\\Downloads\\result3.txt");
+	    	FileWriter fw = new FileWriter(result);
+	    	BufferedWriter bfw = new BufferedWriter(fw);
 	    	
+	    	for(String s:soundex_result){
+	    		bfw.write(s);
+	    		bfw.newLine();
+	    		bfw.flush();
+	    	}
+    		bfw.close();
     	} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-    	
-    			
-    	
+		}    	
+    }
+    
+    public void go1(){
+    	try {
+			ArrayList<String> misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
+			ArrayList<String> correct = this.read("C:\\Users\\cliu20\\Downloads\\correct.txt");
+	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
+	    	
+	    	ArrayList<String> ged_result = this.geo(misspell, correct, dict);
+//	    	ArrayList<String> ngram_result = this.ngram(misspell, correct, dict);
+//	    	ArrayList<String> soundex_result = this.sdex(misspell, correct, dict);
+	    	
+	    	
+	    	File result = new File("C:\\Users\\cliu20\\Downloads\\result1.txt");
+	    	FileWriter fw = new FileWriter(result);
+	    	BufferedWriter bfw = new BufferedWriter(fw);
+	    	
+	    	for(String s:ged_result){
+	    		bfw.write(s);
+	    		bfw.newLine();
+	    		bfw.flush();	    		
+	    	}
+	    	bfw.close();
+    	} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}    	
+    }
+    
+    public void go2(){
+    	try {
+			ArrayList<String> misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
+			ArrayList<String> correct = this.read("C:\\Users\\cliu20\\Downloads\\correct.txt");
+	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
+	    	
+//	    	ArrayList<String> ged_result = this.geo(misspell, correct, dict);
+	    	ArrayList<String> ngram_result = this.ngram(misspell, correct, dict);
+//	    	ArrayList<String> soundex_result = this.sdex(misspell, correct, dict);
+	    	
+	    	
+	    	File result = new File("C:\\Users\\cliu20\\Downloads\\result2.txt");
+	    	FileWriter fw = new FileWriter(result);
+	    	BufferedWriter bfw = new BufferedWriter(fw);
+	    	
+	    	for(String s:ngram_result){
+	    		bfw.write(s);
+	    		bfw.newLine();
+	    		bfw.flush();
+	    	}
+	    	bfw.close();
+    	} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}    	
     }
     
   public ArrayList<String> geo(ArrayList<String> misspell,ArrayList<String> correct,ArrayList<String> dict){
@@ -255,23 +315,29 @@ public class tools {
   public ArrayList<String> sdex(ArrayList<String> misspell,ArrayList<String> correct,ArrayList<String> dict){
 		ArrayList<String> results = new ArrayList<String>();
 	  	ArrayList<String> matched = new ArrayList<String>();
+	  	ArrayList<String> soundexls = new ArrayList<String>();
+	  	
 		int max;
 		int count = 1;
 		double precision;
+		
+		for(String dic: dict){
+			soundexls.add(this.soundex(dic));
+		}
 		
 		for(int i = 0; i<misspell.size(); i++){
 			String mis = misspell.get(i);
 			matched.clear();
 			precision = 0;
-
-			for(String dic: dict){
-				if(this.soundex(mis).equals(this.soundex(dic))){
-					matched.add(dic);
+			for(int j = 0; j< soundexls.size();j++){
+				if(this.soundex(mis).equals(soundexls.get(j))){
+					matched.add(dict.get(j));
 				}
 			}
+			
 			if(matched.contains(correct.get(i))){
 				precision = (float)1/matched.size();
-				System.out.println(precision);
+				System.out.println(count);
 			}
 			count++;
 			results.add(mis+"\t"+this.soundex(mis)+matched.toString()+"\t"+"\t"+precision);
