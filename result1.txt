@@ -115,7 +115,7 @@ in	[in]	2	1.0
 c	[c]	1	1.0
 an	[an]	2	1.0
 sekret	[secret]	4	1.0
-mesage	[mesange, mesnage, message]	5	0.0
+mesage	[mesange, mesnage, message]	5	0.33333334
 you	[you]	3	1.0
 will	[will]	4	1.0
 appreciate	[appreciate]	10	1.0
@@ -377,7 +377,7 @@ if	[if]	2	1.0
 fam	[fam]	3	1.0
 will	[will]	4	1.0
 swoop	[swoop]	5	1.0
-youu	[you, youd, youl, youp, your, yous]	2	0.0
+youu	[you, youd, youl, youp, your, yous]	2	0.16666667
 rt	[rt]	2	1.0
 rt	[rt]	2	1.0
 for	[for]	3	1.0
@@ -465,7 +465,7 @@ b	[b]	1	1.0
 try	[try]	3	1.0
 n	[n]	1	1.0
 go	[go]	2	1.0
-bck	[back, beck, bick, bock, buck]	2	0.0
+bck	[back, beck, bick, bock, buck]	2	0.2
 to	[to]	2	1.0
 sleep	[sleep]	5	1.0
 rt	[rt]	2	1.0
@@ -722,7 +722,7 @@ wanna	[wanna]	5	1.0
 start	[start]	5	1.0
 over	[over]	4	1.0
 you	[you]	3	1.0
-kno	[keno, kino, knob, knop, knot, know, knox]	2	0.0
+kno	[keno, kino, knob, knop, knot, know, knox]	2	0.14285715
 hi	[hi]	2	1.0
 thanks	[thanks]	6	1.0
 to	[to]	2	1.0
@@ -806,7 +806,7 @@ me	[me]	2	1.0
 to	[to]	2	1.0
 stay	[stay]	4	1.0
 patient	[patient]	7	1.0
-fucc	[fuci, fuck, fusc]	2	0.0
+fucc	[fuci, fuck, fusc]	2	0.33333334
 dat	[dat]	3	1.0
 shit	[shit]	4	1.0
 bro	[bro]	3	1.0
@@ -845,7 +845,7 @@ golden	[golden]	6	1.0
 nd	[nd]	2	1.0
 naw	[naw]	3	1.0
 it	[it]	2	1.0
-wnts	[wants, wonts]	3	0.0
+wnts	[wants, wonts]	3	0.5
 2	[a, b, c, d, e, f, g, h, i, y, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, z]	-1	0.0
 let	[let]	3	1.0
 go	[go]	2	1.0
@@ -1073,7 +1073,7 @@ eh	[eh]	2	1.0
 basta	[basta]	5	1.0
 maganda	[baganda, waganda]	5	0.0
 u	[u]	1	1.0
-jst	[jest, just]	2	0.0
+jst	[jest, just]	2	0.5
 going	[going]	5	1.0
 in	[in]	2	1.0
 normal	[normal]	6	1.0
@@ -1280,7 +1280,7 @@ that	[that]	4	1.0
 bad	[bad]	3	1.0
 but	[but]	3	1.0
 still	[still]	5	1.0
-wth	[wath, with]	2	0.0
+wth	[wath, with]	2	0.5
 100k	[ack, aik, ak, alk, amok, arak, ark, asak, ask, asok, atik, auk, awk, back, balk, bank, bark, bask, bauk, beak, beck, beek, belk, berk, bick, bilk, bink, birk, bisk, bk, blk, blok, bock, bolk, bonk, book, bosk, bouk, bowk, buck, bulk, bunk, burk, busk, cack, calk, cank, cark, cask, cauk, cawk, chok, ck, clk, coak, cock, colk, conk, cook, cork, cowk, csk, cuck, cusk, dak, dalk, dank, dark, dauk, dawk, deck, deek, derk, desk, dhak, dyak, dick, dink, dirk, disk, dk, dock, doek, donk, dook, drek, duck, dunk, dusk, efik, elk, erik, erk, fack, falk, feak, feck, ferk, fink, firk, fisk, flak, folk, fork, fowk, fuck, fulk, funk, fusk, gauk, gawk, geck, geek, gink, gonk, gook, gowk, guck, gunk, gurk, haak, hack, haik, hak, hank, hark, hask, hawk, hdbk, heck, heuk, hick, hock, holk, honk, hook, howk, huck, huk, hulk, hunk, husk, yack, yak, yank, yark, yelk, yerk, yeuk, yirk, ik, ilk, ink, yock, yok, yolk, yook, york, yrbk, irk, irok, yuck, yuk, jack, jak, jank, jark, jauk, jerk, jink, jock, jook, jouk, juck, junk, k, kaik, keck, keek, kelk, kyak, kick, kink, kirk, kook, kunk, lack, laik, lak, lank, lark, lask, lawk, leak, leck, leek, lek, leuk, lick, link, lisk, lock, lonk, look, louk, luck, lunk, lurk, lusk, mack, mank, mark, mask, mawk, meak, meck, meek, merk, mick, miek, milk, mink, mirk, mk, mock, monk, mosk, muck, mulk, murk, musk, nabk, naik, nak, nark, neck, nek, neuk, nick, nock, nook, nork, oak, ock, oik, oink, ok, owk, pack, paik, pank, park, pask, pawk, peak, peck, peek, penk, perk, pick, pik, pink, pisk, pk, plak, pmk, pock, polk, pook, pork, puck, pulk, punk, rack, rank, rauk, reak, reck, reek, renk, rick, rik, rikk, rink, risk, roak, rock, rok, rook, ruck, rusk, sack, sak, sank, sark, seak, seck, seek, shik, siak, sick, silk, sink, sk, slik, soak, sock, sok, sonk, sook, souk, spak, spik, stk, suck, suk, sulk, sunk, tack, talk, tank, task, tck, teak, teck, teuk, thak, tick, tink, tk, tnpk, tock, tonk, took, tosk, tpk, trek, tsk, tuck, tuik, tunk, turk, tusk, vick, wack, waik, walk, wank, wark, wauk, weak, week, welk, wick, wilk, wink, wk, wmk, woak, wok, wonk, work, wulk, zack, zak, zek, zink]	-2	0.0
 hahahahha	[halachah]	2	0.0
 i	[i]	1	1.0
@@ -1300,15 +1300,15 @@ a	[a]	1	1.0
 survivooooor	[survivor]	4	0.0
 i'm	[ibm, im, ipm, ism]	1	0.0
 not	[not]	3	1.0
-goin	[goyin, going, groin]	3	0.0
+goin	[goyin, going, groin]	3	0.33333334
 give	[give]	4	1.0
 up	[up]	2	1.0
 i'm	[ibm, im, ipm, ism]	1	0.0
 not	[not]	3	1.0
-goin	[goyin, going, groin]	3	0.0
+goin	[goyin, going, groin]	3	0.33333334
 stop	[stop]	4	1.0
 i'm	[ibm, im, ipm, ism]	1	0.0
-goin	[goyin, going, groin]	3	0.0
+goin	[goyin, going, groin]	3	0.33333334
 work	[work]	4	1.0
 hardeeeer	[hardener, hardhewer]	5	0.0
 it	[it]	2	1.0
@@ -1549,7 +1549,7 @@ awnser	[anser, awner]	4	0.0
 the	[the]	3	1.0
 phone	[phone]	5	1.0
 you	[you]	3	1.0
-woyld	[woald, wold, woold, world, would]	3	0.0
+woyld	[woald, wold, woold, world, would]	3	0.2
 know	[know]	4	1.0
 and	[and]	3	1.0
 did	[did]	3	1.0
@@ -1566,7 +1566,7 @@ for	[for]	3	1.0
 joaquim	[jaquima]	4	0.0
 abranches	[branches]	7	0.0
 soubhik	[souchie, souslik]	3	0.0
-fucka	[fuck, fucks, pucka]	3	0.0
+fucka	[fuck, fucks, pucka]	3	0.33333334
 boo	[boo]	3	1.0
 im	[im]	2	1.0
 bout	[bout]	4	1.0
@@ -1686,7 +1686,7 @@ mustard	[mustard]	7	1.0
 he	[he]	2	1.0
 is	[is]	2	1.0
 almost	[almost]	6	1.0
-thwre	[there, thore]	3	0.0
+thwre	[there, thore]	3	0.5
 and	[and]	3	1.0
 im	[im]	2	1.0
 cruing	[accruing, cluing, crying, crudding, cruising, crumbing, crumming, crumping, crushing, crusting, cuing, ruing, truing]	4	0.0
@@ -1729,7 +1729,7 @@ this	[this]	4	1.0
 bet	[bet]	3	1.0
 they're	[theyre]	5	0.0
 thinking	[thinking]	8	1.0
-wahat	[mahat, wahabit, wasat, what]	3	0.0
+wahat	[mahat, wahabit, wasat, what]	3	0.25
 the	[the]	3	1.0
 fuck	[fuck]	4	1.0
 ismail	[dismail, ismaili]	5	0.0
@@ -2164,7 +2164,7 @@ bad	[bad]	3	1.0
 blood	[blood]	5	1.0
 str8	[str, stra, stre]	2	0.0
 hate	[hate]	4	1.0
-runnin	[running, runnion]	5	0.0
+runnin	[running, runnion]	5	0.5
 thru	[thru]	4	1.0
 ya	[ya]	2	1.0
 let's	[lets]	3	0.0
@@ -2218,17 +2218,17 @@ that	[that]	4	1.0
 all	[all]	3	1.0
 these	[these]	5	1.0
 thots	[hots, phots, shots, thats, thos, thous, throats, toots, tots, trots]	3	0.0
-goin	[goyin, going, groin]	3	0.0
+goin	[goyin, going, groin]	3	0.33333334
 wild	[wild]	4	1.0
 givin	[givin]	5	1.0
-headd	[headed, hexadd]	4	0.0
+headd	[headed, hexadd]	4	0.5
 on	[on]	2	1.0
 the	[the]	3	1.0
 vents	[vents]	5	1.0
 bitch	[bitch]	5	1.0
 better	[better]	6	1.0
 be	[be]	2	1.0
-jokin	[joking, joskin]	4	0.0
+jokin	[joking, joskin]	4	0.5
 or	[or]	2	1.0
 flip	[flip]	4	1.0
 the	[the]	3	1.0
@@ -2260,7 +2260,7 @@ juss	[jussi, justs]	3	0.0
 hold	[hold]	4	1.0
 on	[on]	2	1.0
 we	[we]	2	1.0
-goin	[goyin, going, groin]	3	0.0
+goin	[goyin, going, groin]	3	0.33333334
 home	[home]	4	1.0
 van	[van]	3	1.0
 persie	[perdie, perrie, persae, perse, perseite, persia, persic, persio, persis, perspire, persue]	4	0.0
@@ -2300,7 +2300,7 @@ old	[old]	3	1.0
 ladies	[ladies]	6	1.0
 and	[and]	3	1.0
 children	[children]	8	1.0
-weiiiiird	[devilbird, weetbird, weird, weirdward, wetbird, whipbird, whitebird, wirebird]	1	0.0
+weiiiiird	[devilbird, weetbird, weird, weirdward, wetbird, whipbird, whitebird, wirebird]	1	0.125
 my	[my]	2	1.0
 issue	[issue]	5	1.0
 with	[with]	4	1.0
@@ -2405,7 +2405,7 @@ i	[i]	1	1.0
 luff	[luff]	4	1.0
 u	[u]	1	1.0
 gyo	[gyro]	2	0.0
-marri	[arri, carri, karri, mahri, maori, mararie, marci, mardi, mari, marli, marry, married, marrier, marries, marring, marsi, martrix, marwari, mauri, tarri, timarri, warri]	3	0.0
+marri	[arri, carri, karri, mahri, maori, mararie, marci, mardi, mari, marli, marry, married, marrier, marries, marring, marsi, martrix, marwari, mauri, tarri, timarri, warri]	3	0.045454547
 mi	[mi]	2	1.0
 someone	[someone]	7	1.0
 snapchat	[snapshot]	4	0.0
@@ -2484,7 +2484,7 @@ been	[been]	4	1.0
 since	[since]	5	1.0
 rt	[rt]	2	1.0
 just	[just]	4	1.0
-sittin	[sittine, sitting]	5	0.0
+sittin	[sittine, sitting]	5	0.5
 in	[in]	2	1.0
 the	[the]	3	1.0
 studio	[studio]	6	1.0
@@ -2676,7 +2676,7 @@ now	[now]	3	1.0
 but	[but]	3	1.0
 they	[they]	4	1.0
 sound	[sound]	5	1.0
-goood	[egohood, glood, godhood, gonopod, good]	3	0.0
+goood	[egohood, glood, godhood, gonopod, good]	3	0.2
 im	[im]	2	1.0
 back	[back]	4	1.0
 and	[and]	3	1.0
@@ -2950,7 +2950,7 @@ booo	[bobo, bodo, bogo, boho, boyo, bojo, boko, bolo, bono, boo, boob, booboo, b
 i	[i]	1	1.0
 just	[just]	4	1.0
 got	[got]	3	1.0
-homee	[home, homed, homey, homelet, homer, homered, homes, homme]	3	0.0
+homee	[home, homed, homey, homelet, homer, homered, homes, homme]	3	0.125
 please	[please]	6	1.0
 let	[let]	3	1.0
 me	[me]	2	1.0
@@ -3104,7 +3104,7 @@ addis	[addis]	5	1.0
 following	[following]	9	1.0
 tattered	[tattered]	8	1.0
 website	[jebusite, webster, websterite, weissite, wellsite]	4	0.0
-dwnld	[dawned, donald, downed, downfold, downland, download, dwindled, dwined]	2	0.0
+dwnld	[dawned, donald, downed, downfold, downland, download, dwindled, dwined]	2	0.125
 r	[r]	1	1.0
 free	[free]	4	1.0
 app	[app]	3	1.0
@@ -3164,7 +3164,7 @@ to	[to]	2	1.0
 a	[a]	1	1.0
 playlist	[paulist, phallist, playless, playlet, playlike, pluralist]	4	0.0
 trey	[trey]	4	1.0
-songz	[song, songy, songo, songs]	3	0.0
+songz	[song, songy, songo, songs]	3	0.25
 u	[u]	1	1.0
 belong	[belong]	6	1.0
 to	[to]	2	1.0
@@ -3278,7 +3278,7 @@ shit	[shit]	4	1.0
 shit	[shit]	4	1.0
 shit	[shit]	4	1.0
 shitihsthiaht	[ehatisaht, philistia, philistian, shintoistic, shittah, shittahs, shittiest, smithsonian, sticktight]	1	0.0
-shitb	[shit, shita, shits]	3	0.0
+shitb	[shit, shita, shits]	3	0.33333334
 landaan	[landamman, landman]	5	0.0
 defo	[defog]	3	0.0
 worth	[worth]	5	1.0
@@ -3369,7 +3369,7 @@ lens	[lens]	4	1.0
 camera	[camera]	6	1.0
 cc	[cc]	2	1.0
 thank	[thank]	5	1.0
-youuu	[yomud, you, youd, youff, youl, young, youngun, youp, your, youre, yourn, yours, yourt, yous, youse, youth, youve, youze, yutu, loulu]	1	0.0
+youuu	[yomud, you, youd, youff, youl, young, youngun, youp, your, youre, yourn, yours, yourt, yous, youse, youth, youve, youze, yutu, loulu]	1	0.05
 i	[i]	1	1.0
 wish	[wish]	4	1.0
 the	[the]	3	1.0
@@ -3497,7 +3497,7 @@ just	[just]	4	1.0
 strained	[strained]	8	1.0
 voice	[voice]	5	1.0
 soo	[shoo, skoo, sloo, soco, soho, soko, solo, sook, sool, soom, soon, soot, soso]	2	0.0
-goodd	[good, goody, goods]	3	0.0
+goodd	[good, goody, goods]	3	0.33333334
 rt	[rt]	2	1.0
 in	[in]	2	1.0
 all	[all]	3	1.0
@@ -3513,7 +3513,7 @@ mom	[mom]	3	1.0
 has	[has]	3	1.0
 got	[got]	3	1.0
 it	[it]	2	1.0
-goin	[goyin, going, groin]	3	0.0
+goin	[goyin, going, groin]	3	0.33333334
 on	[on]	2	1.0
 i'm	[ibm, im, ipm, ism]	1	0.0
 now	[now]	3	1.0
@@ -3562,7 +3562,7 @@ all	[all]	3	1.0
 over	[over]	4	1.0
 the	[the]	3	1.0
 place	[place]	5	1.0
-psh	[pash, pish, posh, psha, push]	2	0.0
+psh	[pash, pish, posh, psha, push]	2	0.2
 okay	[okay]	4	1.0
 like	[like]	4	1.0
 i	[i]	1	1.0
@@ -3714,7 +3714,7 @@ wake	[wake]	4	1.0
 mi	[mi]	2	1.0
 up	[up]	2	1.0
 early	[early]	5	1.0
-enuhh	[eneuch, eneugh, enough, eunuch]	2	0.0
+enuhh	[eneuch, eneugh, enough, eunuch]	2	0.25
 suh	[such, sugh]	2	0.0
 a	[a]	1	1.0
 bed	[bed]	3	1.0
@@ -3742,10 +3742,10 @@ fed	[fed]	3	1.0
 pj	[dj, j, nj, p, pa, pc, pd, pe, pf, pg, ph, pi, pk, pl, pm, po, pp, pq, pr, ps, pt, pu, puja]	0	0.0
 on	[on]	2	1.0
 wine	[wine]	4	1.0
-wil	[wail, wild, wile, wily, wilk, will, wilt, wirl]	2	0.0
+wil	[wail, wild, wile, wily, wilk, will, wilt, wirl]	2	0.125
 be	[be]	2	1.0
 flowing	[flowing]	7	1.0
-fyck	[fack, feck, fyce, fuck]	2	0.0
+fyck	[fack, feck, fyce, fuck]	2	0.25
 im	[im]	2	1.0
 watching	[watching]	8	1.0
 it	[it]	2	1.0
@@ -4030,7 +4030,7 @@ hahahaha	[halachah]	3	0.0
 nice	[nice]	4	1.0
 meeting	[meeting]	7	1.0
 you	[you]	3	1.0
-ghad	[chad, gad, ghan, ghat, glad, goad, gpad, grad, had, shad, thad]	2	0.0
+ghad	[chad, gad, ghan, ghat, glad, goad, gpad, grad, had, shad, thad]	2	0.09090909
 ashley	[ashkey, ashler]	4	0.0
 greene	[greened, greeney, greener]	5	0.0
 and	[and]	3	1.0
@@ -4055,7 +4055,7 @@ happy	[happy]	5	1.0
 sweetseventen	[sweetened, sweetener, sweethearted]	3	0.0
 bang	[bang]	4	1.0
 semoga	[semola]	4	0.0
-makin	[making, malkin, mankin, maukin, mawkin]	4	0.0
+makin	[making, malkin, mankin, maukin, mawkin]	4	0.2
 jago	[ago, bago, dago, iago, jag, jaga, jagg, jagong, jags, jako, jargon, jato, kago, sago]	2	0.0
 sepakbolanya	[jambolana]	2	0.0
 be	[be]	2	1.0
@@ -4064,7 +4064,7 @@ than	[than]	4	1.0
 before	[before]	6	1.0
 allah	[allah]	5	1.0
 bless	[bless]	5	1.0
-youo	[yoho, yoyo, you, youd, youl, youp, youpon, your, yous]	2	0.0
+youo	[yoho, yoyo, you, youd, youl, youp, youpon, your, yous]	2	0.11111111
 rt	[rt]	2	1.0
 i	[i]	1	1.0
 was	[was]	3	1.0
@@ -4145,7 +4145,7 @@ to	[to]	2	1.0
 kpop	[epop, klop, knop, kop, pop]	2	0.0
 is	[is]	2	1.0
 hart	[hart]	4	1.0
-problema	[problem, problems]	6	0.0
+problema	[problem, problems]	6	0.5
 ng	[ng]	2	1.0
 mga	[maga, mgal, muga]	2	0.0
 tao	[tao]	3	1.0
@@ -4243,7 +4243,7 @@ album	[album]	5	1.0
 today	[today]	5	1.0
 will	[will]	4	1.0
 be	[be]	2	1.0
-seein	[seeing, serein]	4	0.0
+seein	[seeing, serein]	4	0.5
 these	[these]	5	1.0
 niggas	[niggards]	4	0.0
 at	[at]	2	1.0
@@ -4273,7 +4273,7 @@ or	[or]	2	1.0
 not	[not]	3	1.0
 they	[they]	4	1.0
 worth	[worth]	5	1.0
-dealin	[dealing, decalin]	5	0.0
+dealin	[dealing, decalin]	5	0.5
 wit	[wit]	3	1.0
 rt	[rt]	2	1.0
 retweet	[peetweet]	4	0.0
@@ -4302,7 +4302,7 @@ soon	[soon]	4	1.0
 blackjack	[blackjack]	9	1.0
 malaysia	[malaysia]	8	1.0
 u	[u]	1	1.0
-knw	[knaw, knew, know]	2	0.0
+knw	[knaw, knew, know]	2	0.33333334
 right	[right]	5	1.0
 i	[i]	1	1.0
 didnt	[didnt]	5	1.0
@@ -4319,8 +4319,8 @@ rt	[rt]	2	1.0
 i'm	[ibm, im, ipm, ism]	1	0.0
 oblock	[ablock, block, oclock, ollock]	4	0.0
 bitch	[bitch]	5	1.0
-yu	[ayu, you, yug, yuh, yuk, yum, yun, yup, yus, kyu]	1	0.0
-kno	[keno, kino, knob, knop, knot, know, knox]	2	0.0
+yu	[ayu, you, yug, yuh, yuk, yum, yun, yup, yus, kyu]	1	0.1
+kno	[keno, kino, knob, knop, knot, know, knox]	2	0.14285715
 how	[how]	3	1.0
 id	[id]	2	1.0
 go	[go]	2	1.0
@@ -4565,7 +4565,7 @@ talking	[talking]	7	1.0
 to	[to]	2	1.0
 someone	[someone]	7	1.0
 u	[u]	1	1.0
-kno	[keno, kino, knob, knop, knot, know, knox]	2	0.0
+kno	[keno, kino, knob, knop, knot, know, knox]	2	0.14285715
 is	[is]	2	1.0
 thirsty	[thirsty]	7	1.0
 for	[for]	3	1.0
@@ -4673,7 +4673,7 @@ rt	[rt]	2	1.0
 oh	[oh]	2	1.0
 bah	[bah]	3	1.0
 xd	[xd]	2	1.0
-bxtch	[batch, bitch, botch, butch]	3	0.0
+bxtch	[batch, bitch, botch, butch]	3	0.25
 dont	[dont]	4	1.0
 front	[front]	5	1.0
 ill	[ill]	3	1.0
@@ -4835,7 +4835,7 @@ a	[a]	1	1.0
 text	[text]	4	1.0
 message	[message]	7	1.0
 you	[you]	3	1.0
-wrre	[ware, warred, warree, warren, warrer, were, wire, wore, worrel]	2	0.0
+wrre	[ware, warred, warree, warren, warrer, were, wire, wore, worrel]	2	0.11111111
 a	[a]	1	1.0
 ninja	[ninja]	5	1.0
 until	[until]	5	1.0
@@ -4905,7 +4905,7 @@ u	[u]	1	1.0
 y	[y]	1	1.0
 dun	[dun]	3	1.0
 u	[u]	1	1.0
-hve	[have, hive, hove]	2	0.0
+hve	[have, hive, hove]	2	0.33333334
 summer	[summer]	6	1.0
 vaccations	[vacations, vaccinations]	8	0.0
 rt	[rt]	2	1.0
@@ -4968,7 +4968,7 @@ la	[la]	2	1.0
 decima	[decima]	6	1.0
 again	[again]	5	1.0
 for	[for]	3	1.0
-youu	[you, youd, youl, youp, your, yous]	2	0.0
+youu	[you, youd, youl, youp, your, yous]	2	0.16666667
 voy	[avoy]	2	0.0
 a	[a]	1	1.0
 matar	[matar]	5	1.0
@@ -5092,7 +5092,7 @@ lewwwl	[lelwel]	2	0.0
 imagine	[imagine]	7	1.0
 i	[i]	1	1.0
 joke	[joke]	4	1.0
-fxck	[fack, feck, fuck]	2	0.0
+fxck	[fack, feck, fuck]	2	0.33333334
 all	[all]	3	1.0
 you	[you]	3	1.0
 lot	[lot]	3	1.0
@@ -5108,7 +5108,7 @@ mixing	[mixing]	6	1.0
 tracks	[tracks]	6	1.0
 for	[for]	3	1.0
 mastering	[mastering]	9	1.0
-seperate	[separate, severate, sperate, superate]	6	0.0
+seperate	[separate, severate, sperate, superate]	6	0.25
 inbox	[inbow, sinkbox, unbox]	3	0.0
 me	[me]	2	1.0
 for	[for]	3	1.0
@@ -5125,7 +5125,7 @@ stick	[stick]	5	1.0
 to	[to]	2	1.0
 wut	[wut]	3	1.0
 i	[i]	1	1.0
-kno	[keno, kino, knob, knop, knot, know, knox]	2	0.0
+kno	[keno, kino, knob, knop, knot, know, knox]	2	0.14285715
 dis	[dis]	3	1.0
 money	[money]	5	1.0
 yo	[yo]	2	1.0
@@ -5460,7 +5460,7 @@ y'all	[yalla, myall]	2	0.0
 pls	[pals, plus, pols, puls]	2	0.0
 shut	[shut]	4	1.0
 the	[the]	3	1.0
-fk	[ak, bk, ck, dk, efik, f, fa, fack, fake, faki, faky, falk, fb, fc, fe, feak, feck, ferk, ff, fg, fi, fy, fike, fyke, fikh, fink, firk, fisk, fl, flak, fm, fn, fo, folk, fork, fowk, fp, fr, fs, ft, fu, fuck, fulk, funk, fusk, fv, fw, fz, ik, k, mk, ok, pk, sk, tk, wk]	0	0.0
+fk	[ak, bk, ck, dk, efik, f, fa, fack, fake, faki, faky, falk, fb, fc, fe, feak, feck, ferk, ff, fg, fi, fy, fike, fyke, fikh, fink, firk, fisk, fl, flak, fm, fn, fo, folk, fork, fowk, fp, fr, fs, ft, fu, fuck, fulk, funk, fusk, fv, fw, fz, ik, k, mk, ok, pk, sk, tk, wk]	0	0.017857144
 up	[up]	2	1.0
 heey	[heedy, heezy]	3	0.0
 harry	[harry]	5	1.0
@@ -5486,7 +5486,7 @@ whole	[whole]	5	1.0
 thing	[thing]	5	1.0
 or	[or]	2	1.0
 just	[just]	4	1.0
-comin	[coming, comino]	4	0.0
+comin	[coming, comino]	4	0.5
 at	[at]	2	1.0
 the	[the]	3	1.0
 end	[end]	3	1.0
@@ -5853,11 +5853,11 @@ rt	[rt]	2	1.0
 when	[when]	4	1.0
 the	[the]	3	1.0
 person	[person]	6	1.0
-sittin	[sittine, sitting]	5	0.0
+sittin	[sittine, sitting]	5	0.5
 beside	[beside]	6	1.0
 u	[u]	1	1.0
 is	[is]	2	1.0
-chewin	[chewing, chewink]	5	0.0
+chewin	[chewing, chewink]	5	0.5
 loud	[loud]	4	1.0
 roko	[iroko]	3	0.0
 novelty	[novelty]	7	1.0
@@ -5887,7 +5887,7 @@ bottles	[bottles]	7	1.0
 in	[in]	2	1.0
 the	[the]	3	1.0
 airrr	[airer]	3	0.0
-livin	[livian, living]	4	0.0
+livin	[livian, living]	4	0.5
 without	[without]	7	1.0
 a	[a]	1	1.0
 care	[care]	4	1.0
@@ -6108,7 +6108,7 @@ en	[en]	2	1.0
 pretend	[pretend]	7	1.0
 2	[a, b, c, d, e, f, g, h, i, y, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, z]	-1	0.0
 be	[be]	2	1.0
-wht	[what, whet, whit]	2	0.0
+wht	[what, whet, whit]	2	0.33333334
 u	[u]	1	1.0
 nt	[nt]	2	1.0
 still	[still]	5	1.0
@@ -6404,7 +6404,7 @@ found	[found]	5	1.0
 this	[this]	4	1.0
 dog	[dog]	3	1.0
 and	[and]	3	1.0
-wnt	[want, went, wint, wont, wrnt]	2	0.0
+wnt	[want, went, wint, wont, wrnt]	2	0.2
 to	[to]	2	1.0
 find	[find]	4	1.0
 it's	[itys, its]	2	0.0
@@ -6627,7 +6627,7 @@ still	[still]	5	1.0
 hurts	[hurts]	5	1.0
 me	[me]	2	1.0
 somehow	[somehow]	7	1.0
-anywayy	[anyway, anyways]	5	0.0
+anywayy	[anyway, anyways]	5	0.5
 i	[i]	1	1.0
 hate	[hate]	4	1.0
 viners	[veiners]	5	0.0
@@ -6678,7 +6678,7 @@ scrolls	[scrolls]	7	1.0
 from	[from]	4	1.0
 australia	[australia]	9	1.0
 i	[i]	1	1.0
-wann	[wanna, wanny]	3	0.0
+wann	[wanna, wanny]	3	0.5
 go	[go]	2	1.0
 there	[there]	5	1.0
 soo	[shoo, skoo, sloo, soco, soho, soko, solo, sook, sool, soom, soon, soot, soso]	2	0.0
@@ -6936,7 +6936,7 @@ talking	[talking]	7	1.0
 to	[to]	2	1.0
 someone	[someone]	7	1.0
 u	[u]	1	1.0
-kno	[keno, kino, knob, knop, knot, know, knox]	2	0.0
+kno	[keno, kino, knob, knop, knot, know, knox]	2	0.14285715
 that's	[thats]	4	0.0
 thirsty	[thirsty]	7	1.0
 for	[for]	3	1.0
@@ -7061,7 +7061,7 @@ response	[response]	8	1.0
 was	[was]	3	1.0
 like	[like]	4	1.0
 is	[is]	2	1.0
-yu	[ayu, you, yug, yuh, yuk, yum, yun, yup, yus, kyu]	1	0.0
+yu	[ayu, you, yug, yuh, yuk, yum, yun, yup, yus, kyu]	1	0.1
 sayin	[saying]	4	1.0
 who	[who]	3	1.0
 said	[said]	4	1.0
@@ -7069,7 +7069,7 @@ i	[i]	1	1.0
 wanted	[wanted]	6	1.0
 to	[to]	2	1.0
 fix	[fix]	3	1.0
-yur	[your, yurt]	2	0.0
+yur	[your, yurt]	2	0.5
 shit	[shit]	4	1.0
 i	[i]	1	1.0
 got	[got]	3	1.0
@@ -7206,7 +7206,7 @@ some	[some]	4	1.0
 real	[real]	4	1.0
 cold	[cold]	4	1.0
 hearted	[hearted]	7	1.0
-shxt	[sext, shat, shit, shot, shpt, sht, shut]	2	0.0
+shxt	[sext, shat, shit, shot, shpt, sht, shut]	2	0.14285715
 why	[why]	3	1.0
 jan	[jan]	3	1.0
 cemburu	[cebur, combure, samburu]	3	0.0
@@ -7397,7 +7397,7 @@ is	[is]	2	1.0
 dyn	[dyn]	3	1.0
 on	[on]	2	1.0
 your	[your]	4	1.0
-freinds	[freeings, friends, prebinds, rebinds, refinds, reminds, rewinds]	4	0.0
+freinds	[freeings, friends, prebinds, rebinds, refinds, reminds, rewinds]	4	0.14285715
 list	[list]	4	1.0
 i	[i]	1	1.0
 dont	[dont]	4	1.0
@@ -7494,10 +7494,10 @@ bout	[bout]	4	1.0
 what	[what]	4	1.0
 you	[you]	3	1.0
 really	[really]	6	1.0
-doin	[doina, doing]	3	0.0
+doin	[doina, doing]	3	0.5
 i	[i]	1	1.0
 can	[can]	3	1.0
-fuckz	[fuck, fucks]	3	0.0
+fuckz	[fuck, fucks]	3	0.5
 with	[with]	4	1.0
 it	[it]	2	1.0
 dont	[dont]	4	1.0
@@ -7624,7 +7624,7 @@ i	[i]	1	1.0
 feel	[feel]	4	1.0
 dumb	[dumb]	4	1.0
 as	[as]	2	1.0
-fuk	[fuck, fulk, funk, fusk]	2	0.0
+fuk	[fuck, fulk, funk, fusk]	2	0.25
 rt	[rt]	2	1.0
 moment	[moment]	6	1.0
 uan	[duan, guan, yuan, juan, kuan, puan, quan, tuan, uang, ulan, uran, uzan]	2	0.0
@@ -7829,7 +7829,7 @@ what	[what]	4	1.0
 happens	[happens]	7	1.0
 when	[when]	4	1.0
 one	[one]	3	1.0
-reporte	[reported, reporter]	6	0.0
+reporte	[reported, reporter]	6	0.5
 r|t	[rat, rct, ret, rit, rot, rpt, rt, rut]	1	0.0
 pronounce	[pronounce]	9	1.0
 phonetic	[phonetic]	8	1.0
@@ -7921,7 +7921,7 @@ showpiece	[showpiece]	9	1.0
 y	[y]	1	1.0
 tho	[tho]	3	1.0
 u	[u]	1	1.0
-luk	[leuk, louk, luck, luke, lunk, lurk, lusk]	2	0.0
+luk	[leuk, louk, luck, luke, lunk, lurk, lusk]	2	0.14285715
 fit	[fit]	3	1.0
 rt	[rt]	2	1.0
 fancam	[fanam]	4	0.0
@@ -8008,7 +8008,7 @@ red	[red]	3	1.0
 mofo	[impofo, moco, modo, moff, mogo, moho, moio, moyo, mojo, moko, momo, mono, moo, moro, moxo, mozo, ofo]	2	0.0
 from	[from]	4	1.0
 insidous	[insidious]	7	0.0
-stillll	[stilbella, still, stilled, stiller, stilly, stills]	3	0.0
+stillll	[stilbella, still, stilled, stiller, stilly, stills]	3	0.16666667
 scares	[scares]	6	1.0
 the	[the]	3	1.0
 shit	[shit]	4	1.0
@@ -8148,7 +8148,7 @@ tears	[tears]	5	1.0
 so	[so]	2	1.0
 kawaii	[hawaii]	4	0.0
 i	[i]	1	1.0
-kno	[keno, kino, knob, knop, knot, know, knox]	2	0.0
+kno	[keno, kino, knob, knop, knot, know, knox]	2	0.14285715
 u	[u]	1	1.0
 ain't	[aint]	3	0.0
 that	[that]	4	1.0
@@ -8456,7 +8456,7 @@ which	[which]	5	1.0
 is	[is]	2	1.0
 my	[my]	2	1.0
 brutha	[bruta]	4	0.0
-jst	[jest, just]	2	0.0
+jst	[jest, just]	2	0.5
 calm	[calm]	4	1.0
 down	[down]	4	1.0
 babygirl	[playgirl]	3	0.0
@@ -8488,7 +8488,7 @@ tipsy	[tipsy]	5	1.0
 rt	[rt]	2	1.0
 it	[it]	2	1.0
 all	[all]	3	1.0
-wrked	[warked, worked]	4	0.0
+wrked	[warked, worked]	4	0.5
 out	[out]	3	1.0
 niall	[niall]	5	1.0
 i	[i]	1	1.0
@@ -8496,7 +8496,7 @@ realy	[really, realty, rearly]	4	0.0
 nid	[nid]	3	1.0
 2	[a, b, c, d, e, f, g, h, i, y, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, z]	-1	0.0
 start	[start]	5	1.0
-meetin	[meeting, meletin]	5	0.0
+meetin	[meeting, meletin]	5	0.5
 new	[new]	3	1.0
 people	[people]	6	1.0
 tho	[tho]	3	1.0
@@ -8752,7 +8752,7 @@ a	[a]	1	1.0
 word	[word]	4	1.0
 abt	[abt]	3	1.0
 otherwise	[otherwise]	9	1.0
-viru	[virtu, virus]	3	0.0
+viru	[virtu, virus]	3	0.5
 sir	[sir]	3	1.0
 will	[will]	4	1.0
 kill	[kill]	4	1.0
@@ -9469,7 +9469,7 @@ new	[new]	3	1.0
 dubstep	[daubster]	4	0.0
 from	[from]	4	1.0
 me	[me]	2	1.0
-comin	[coming, comino]	4	0.0
+comin	[coming, comino]	4	0.5
 out	[out]	3	1.0
 in	[in]	2	1.0
 like	[like]	4	1.0
@@ -9657,7 +9657,7 @@ better	[better]	6	1.0
 than	[than]	4	1.0
 starving	[starving]	8	1.0
 bruh	[brugh, brush]	3	0.0
-wht	[what, whet, whit]	2	0.0
+wht	[what, whet, whit]	2	0.33333334
 if	[if]	2	1.0
 i	[i]	1	1.0
 tell	[tell]	4	1.0
@@ -10093,7 +10093,7 @@ it	[it]	2	1.0
 later	[later]	5	1.0
 reall	[really, recall, refall, rewall]	4	0.0
 wats	[wats]	4	1.0
-goin	[goyin, going, groin]	3	0.0
+goin	[goyin, going, groin]	3	0.33333334
 on	[on]	2	1.0
 wit	[wit]	3	1.0
 da	[da]	2	1.0
@@ -10309,7 +10309,7 @@ ain't	[aint]	3	0.0
 suckin	[sucking]	5	1.0
 what	[what]	4	1.0
 chu	[chou, chub, chud, chug, chum, chun, chut, ichu, tchu]	2	0.0
-doin	[doina, doing]	3	0.0
+doin	[doina, doing]	3	0.5
 hoe	[hoe]	3	1.0
 loctite	[localite, locative, lotrite]	4	0.0
 -ounce	[bounce, founce, hounce, jounce, ounce, pounce, rounce]	4	0.0
@@ -10320,3 +10320,6 @@ extra	[extra]	5	1.0
 time	[time]	4	1.0
 gel	[gel]	3	1.0
 loctite	[localite, locative, lotrite]	4	0.0
+0.3026624
+0.82058036
+0.8260027
