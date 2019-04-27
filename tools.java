@@ -273,6 +273,8 @@ public class tools {
 			precisionsum += precision;
 			results.add(mis+"\t"+matched.toString()+"\t"+max+"\t"+precision);
 		}
+		results.add(String.valueOf(correctnum));
+		results.add(String.valueOf(allprenum));
 		float accuracy =(float)correctnum/allprenum;
 		results.add(String.valueOf(accuracy));
 		results.add(String.valueOf(precisionsum/(count-1)));
@@ -321,6 +323,8 @@ public class tools {
 			precisionsum += precision;
 			results.add(mis+"\t"+matched.toString()+"\t"+minum+"\t"+precision);
 		}
+		results.add(String.valueOf(correctnum));
+		results.add(String.valueOf(allprenum));
 		results.add(String.valueOf(correctnum/allprenum));
 		results.add(String.valueOf(precisionsum/(count-1)));
 		results.add(String.valueOf(correctnum/(count-1)));
@@ -363,6 +367,8 @@ public class tools {
 			precisionsum += precision;
 			results.add(mis+"\t"+this.soundex(mis)+"\t"+precision+"\t"+matched.toString());
 		}
+		results.add(String.valueOf(correctnum));
+		results.add(String.valueOf(allprenum));
 		results.add(String.valueOf(correctnum/allprenum));
 		results.add(String.valueOf(precisionsum/(count-1)));
 		results.add(String.valueOf(correctnum/(count-1)));
