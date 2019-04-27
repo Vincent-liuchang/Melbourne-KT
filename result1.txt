@@ -10320,6 +10320,9 @@ extra	[extra]	5	1.0
 time	[time]	4	1.0
 gel	[gel]	3	1.0
 loctite	[localite, locative, lotrite]	4	0.0
+8526.0
+28170
 0.3026624
 0.82058036
 0.8260027
+52
