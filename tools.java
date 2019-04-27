@@ -2,7 +2,6 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -48,8 +47,7 @@ public class tools {
     }
 
     public int twograms(String inputstring, String checkstring){
-    	if(inputstring.length()<=1 || checkstring.length() <= 1)
-    		return 100;
+
         String a[] = new String[inputstring.length()-1];
         String b[] = new String[checkstring.length()-1];
         int count = 0;
@@ -161,33 +159,6 @@ public class tools {
 		return misspell;
     }
     
-    public void go3(){
-    	try {
-			ArrayList<String> misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
-			ArrayList<String> correct = this.read("C:\\Users\\cliu20\\Downloads\\correct.txt");
-	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
-	    	
-//	    	ArrayList<String> ged_result = this.geo(misspell, correct, dict);
-//	    	ArrayList<String> ngram_result = this.ngram(misspell, correct, dict);
-	    	ArrayList<String> soundex_result = this.sdex(misspell, correct, dict);
-	    	
-	    	
-	    	File result = new File("C:\\Users\\cliu20\\Downloads\\result3.txt");
-	    	FileWriter fw = new FileWriter(result);
-	    	BufferedWriter bfw = new BufferedWriter(fw);
-	    	
-	    	for(String s:soundex_result){
-	    		bfw.write(s);
-	    		bfw.newLine();
-	    		bfw.flush();
-	    	}
-    		bfw.close();
-    	} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}    	
-    }
-    
     public void go1(){
     	try {
 			ArrayList<String> misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
@@ -195,9 +166,6 @@ public class tools {
 	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
 	    	
 	    	ArrayList<String> ged_result = this.geo(misspell, correct, dict);
-//	    	ArrayList<String> ngram_result = this.ngram(misspell, correct, dict);
-//	    	ArrayList<String> soundex_result = this.sdex(misspell, correct, dict);
-	    	
 	    	
 	    	File result = new File("C:\\Users\\cliu20\\Downloads\\result1.txt");
 	    	FileWriter fw = new FileWriter(result);
@@ -220,11 +188,8 @@ public class tools {
 			ArrayList<String> misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
 			ArrayList<String> correct = this.read("C:\\Users\\cliu20\\Downloads\\correct.txt");
 	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
-	    	
-//	    	ArrayList<String> ged_result = this.geo(misspell, correct, dict);
+
 	    	ArrayList<String> ngram_result = this.ngram(misspell, correct, dict);
-//	    	ArrayList<String> soundex_result = this.sdex(misspell, correct, dict);
-	    	
 	    	
 	    	File result = new File("C:\\Users\\cliu20\\Downloads\\result2.txt");
 	    	FileWriter fw = new FileWriter(result);
@@ -242,12 +207,40 @@ public class tools {
 		}    	
     }
     
+    public void go3(){
+    	try {
+			ArrayList<String> misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
+			ArrayList<String> correct = this.read("C:\\Users\\cliu20\\Downloads\\correct.txt");
+	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
+	    	
+	    	ArrayList<String> soundex_result = this.sdex(misspell, correct, dict);
+	    	
+	    	
+	    	File result = new File("C:\\Users\\cliu20\\Downloads\\result3.txt");
+	    	FileWriter fw = new FileWriter(result);
+	    	BufferedWriter bfw = new BufferedWriter(fw);
+	    	
+	    	for(String s:soundex_result){
+	    		bfw.write(s);
+	    		bfw.newLine();
+	    		bfw.flush();
+	    	}
+    		bfw.close();
+    	} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}    	
+    }
+    
   public ArrayList<String> geo(ArrayList<String> misspell,ArrayList<String> correct,ArrayList<String> dict){
 		ArrayList<String> results = new ArrayList<String>();
 	  	ArrayList<String> matched = new ArrayList<String>();
 		int max;
 		int count = 1;
-		float precision = 0;
+		float precision;
+		int allprenum = 0;
+		float correctnum = 0;
+		float precisionsum = 0;
 		
 		for(int i = 0; i< misspell.size(); i++){
 			String mis = misspell.get(i);
@@ -265,15 +258,25 @@ public class tools {
 					matched.add(dic);
 				if(max == mis.length()){
 					precision = 1;
+					correctnum++;
 					break;
 				}
 			}
-			if(max != mis.length() && matched.contains(correct.get(i)))
-				precision = 1/matched.size();
+			
+			if(max != mis.length() && matched.contains(correct.get(i))){
+				precision = (float)1/(float)matched.size();
+				correctnum++;
+			}
 			System.out.println(count);
 			count++;
+			allprenum += matched.size();
+			precisionsum += precision;
 			results.add(mis+"\t"+matched.toString()+"\t"+max+"\t"+precision);
 		}
+		float accuracy =(float)correctnum/allprenum;
+		results.add(String.valueOf(accuracy));
+		results.add(String.valueOf(precisionsum/(count-1)));
+		results.add(String.valueOf(correctnum/(count-1)));
 		return results;
 	}
   
@@ -282,7 +285,10 @@ public class tools {
 	  	ArrayList<String> matched = new ArrayList<String>();
 		int minum;
 		int count = 1;
-		float precision = 0;
+		float precision;
+		int allprenum = 0;
+		float correctnum = 0;
+		float precisionsum = 0;
 		
 		for(int i = 0; i< misspell.size(); i++){
 			String mis = misspell.get(i);
@@ -300,15 +306,24 @@ public class tools {
 					matched.add(dic);
 				if(minum == 0){
 					precision = 1;
+					correctnum++;
+					
 					break;
 				}
 			}
-			if(minum != mis.length() && matched.contains(correct.get(i)))
-				precision = 1/matched.size();
+			if(minum != 0 && matched.contains(correct.get(i))){
+				precision = (float)1/(float)matched.size();
+				correctnum++;
+			}
 			System.out.println(count);
 			count++;
+			allprenum += matched.size();
+			precisionsum += precision;
 			results.add(mis+"\t"+matched.toString()+"\t"+minum+"\t"+precision);
 		}
+		results.add(String.valueOf(correctnum/allprenum));
+		results.add(String.valueOf(precisionsum/(count-1)));
+		results.add(String.valueOf(correctnum/(count-1)));
 		return results;
 	}
   
@@ -319,7 +334,10 @@ public class tools {
 	  	
 		int max;
 		int count = 1;
-		double precision;
+		float precision;
+		int allprenum = 0;
+		float correctnum = 0;
+		float precisionsum = 0;
 		
 		for(String dic: dict){
 			soundexls.add(this.soundex(dic));
@@ -336,74 +354,18 @@ public class tools {
 			}
 			
 			if(matched.contains(correct.get(i))){
-				precision = (float)1/matched.size();
-				System.out.println(count);
+				precision = (float)1/(float)matched.size();
+				correctnum++;
 			}
+			System.out.println(count);
 			count++;
-			results.add(mis+"\t"+this.soundex(mis)+matched.toString()+"\t"+"\t"+precision);
+			allprenum += matched.size();
+			precisionsum += precision;
+			results.add(mis+"\t"+this.soundex(mis)+"\t"+precision+"\t"+matched.toString());
 		}
+		results.add(String.valueOf(correctnum/allprenum));
+		results.add(String.valueOf(precisionsum/(count-1)));
+		results.add(String.valueOf(correctnum/(count-1)));
 		return results;
 	}
 }    
-    
-    
-    
-    
-    
-    
-    
-//    public void go(){
-//		try{
-//			FileReader fr_mis = new FileReader("C:\\Users\\³©\\Downloads\\ktwork\\misspell.txt");
-//			BufferedReader bf_mis = new BufferedReader(fr_mis);
-//			String line_mis = bf_mis.readLine();
-//			
-//			File result = new File("C:\\Users\\³©\\Downloads\\ktwork\\result.txt");
-//	    	FileWriter fw = new FileWriter(result);
-//	    	BufferedWriter bfw = new BufferedWriter(fw);
-//
-//			
-//			ArrayList<String> matched = new ArrayList<String>();
-//			int max;
-//			int count = 0;
-//			float precision = 0;
-//			
-//			while(line_mis != null){
-//				FileReader fr_dic = new FileReader("C:\\Users\\³©\\Downloads\\ktwork\\dict.txt");
-//				BufferedReader bf_dic = new BufferedReader(fr_dic);
-//				String line_dic = bf_dic.readLine();
-//				matched.clear();
-//				max = -10;
-//
-//				while(line_dic != null){
-//					if(this.GlobalEditDistance(line_mis, line_dic) > max){
-//						max = this.GlobalEditDistance(line_mis, line_dic);
-//						matched.clear();
-//						matched.add(line_dic);
-//					}
-//					else if(this.GlobalEditDistance(line_mis, line_dic) == max)
-//						matched.add(line_dic);
-//					if(max == line_mis.length()){
-//						precision = 1;
-//						break;
-//					}
-//					line_dic = bf_dic.readLine();
-//				}
-//				if(max != line_mis.length())
-//					precision = 1/matched.size();
-//				System.out.println(line_mis);
-//				bfw.write(line_mis+" "+matched.toString()+" "+max+" "+precision+"\r\n");
-//		    	bfw.flush();
-//		    	
-//				bf_dic.close();
-//				line_mis = bf_mis.readLine();
-//				count++;
-//			}
-//			
-//			bf_mis.close();
-//			bfw.close();
-//		}
-//		catch(IOException e){
-//		}
-//	}
-
