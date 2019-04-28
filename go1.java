@@ -1,3 +1,5 @@
+package sthforyourself;
+
 
 public class go1 {
 
