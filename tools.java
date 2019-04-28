@@ -159,6 +159,44 @@ public class tools {
 		return misspell;
     }
     
+    public void go(){
+    	
+    	ArrayList<String> misspell;
+		try {
+			misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
+			ArrayList<String> correct = this.read("C:\\Users\\cliu20\\Downloads\\correct.txt");
+	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
+	    	int count = 0;
+	    	int count1= 0;
+	    	int count2= 0;
+	    	int count3= 0;
+//	    	
+//	    	for(String s:correct){
+//	    		if(dict.contains(s))
+//	    			count++;
+//	    	}
+//	    	
+//	    	for(String s:dict){
+//	    		count1++;
+//	    	}
+//	    	
+//	    	for(int i = 0; i< misspell.size(); i++){
+//	    		if(misspell.get(i).equals(correct.get(i))&&dict.contains(correct.get(i)))
+//	    			count2++;
+//	    	}
+	    	
+	    	for(int i = 0; i< misspell.size(); i++){
+	    		if(misspell.get(i).length()>=8)
+	    			count3++;
+	    	}
+	    	System.out.println(count3);
+	    	
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+    }
     public void go1(){
     	try {
 			ArrayList<String> misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
