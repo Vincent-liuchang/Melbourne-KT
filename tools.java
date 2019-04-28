@@ -1,3 +1,5 @@
+package sthforyourself;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -163,33 +165,43 @@ public class tools {
     	
     	ArrayList<String> misspell;
 		try {
-			misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
-			ArrayList<String> correct = this.read("C:\\Users\\cliu20\\Downloads\\correct.txt");
-	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
+			misspell = this.read("misspell.txt");
+			ArrayList<String> correct = this.read("correct.txt");
+	    	ArrayList<String> dict = this.read("dict.txt");
 	    	int count = 0;
 	    	int count1= 0;
 	    	int count2= 0;
 	    	int count3= 0;
-//	    	
-//	    	for(String s:correct){
-//	    		if(dict.contains(s))
-//	    			count++;
-//	    	}
-//	    	
-//	    	for(String s:dict){
-//	    		count1++;
-//	    	}
-//	    	
-//	    	for(int i = 0; i< misspell.size(); i++){
-//	    		if(misspell.get(i).equals(correct.get(i))&&dict.contains(correct.get(i)))
-//	    			count2++;
-//	    	}
+	    	
+	    	File result = new File("datapreprocessingresults.txt");
+	    	FileWriter fw = new FileWriter(result);
+	    	BufferedWriter bfw = new BufferedWriter(fw);
+	    	
+	    	for(String s:correct){
+	    		if(dict.contains(s))
+	    			count++;
+	    	}
+	    	
+	    	for(String s:dict){
+	    		count1++;
+	    	}
+	    	
+	    	for(int i = 0; i< misspell.size(); i++){
+	    		if(!misspell.get(i).equals(correct.get(i))&&dict.contains(correct.get(i))){
+	    			bfw.write(misspell.get(i)+"\t"+correct.get(i));
+	    			bfw.newLine();
+	    			bfw.flush();	
+	    			count2++;}
+	    	}
 	    	
 	    	for(int i = 0; i< misspell.size(); i++){
 	    		if(misspell.get(i).length()>=8)
 	    			count3++;
 	    	}
-	    	System.out.println(count3);
+	    	System.out.println("ok");
+	    	bfw.write(count +"\t"+count1 +"\t"+count2 +"\t"+ count3);
+	    	bfw.newLine();
+    		bfw.flush();	
 	    	
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -199,13 +211,13 @@ public class tools {
     }
     public void go1(){
     	try {
-			ArrayList<String> misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
-			ArrayList<String> correct = this.read("C:\\Users\\cliu20\\Downloads\\correct.txt");
-	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
+			ArrayList<String> misspell = this.read("misspell.txt");
+			ArrayList<String> correct = this.read("correct.txt");
+	    	ArrayList<String> dict = this.read("dict.txt");
 	    	
 	    	ArrayList<String> ged_result = this.geo(misspell, correct, dict);
 	    	
-	    	File result = new File("C:\\Users\\cliu20\\Downloads\\result1.txt");
+	    	File result = new File("GEDresults.txt");
 	    	FileWriter fw = new FileWriter(result);
 	    	BufferedWriter bfw = new BufferedWriter(fw);
 	    	
@@ -223,13 +235,13 @@ public class tools {
     
     public void go2(){
     	try {
-			ArrayList<String> misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
-			ArrayList<String> correct = this.read("C:\\Users\\cliu20\\Downloads\\correct.txt");
-	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
+			ArrayList<String> misspell = this.read("misspell.txt");
+			ArrayList<String> correct = this.read("correct.txt");
+	    	ArrayList<String> dict = this.read("dict.txt");
 
 	    	ArrayList<String> ngram_result = this.ngram(misspell, correct, dict);
 	    	
-	    	File result = new File("C:\\Users\\cliu20\\Downloads\\result2.txt");
+	    	File result = new File("NGRAMresults.txt");
 	    	FileWriter fw = new FileWriter(result);
 	    	BufferedWriter bfw = new BufferedWriter(fw);
 	    	
@@ -247,14 +259,14 @@ public class tools {
     
     public void go3(){
     	try {
-			ArrayList<String> misspell = this.read("C:\\Users\\cliu20\\Downloads\\misspell.txt");
-			ArrayList<String> correct = this.read("C:\\Users\\cliu20\\Downloads\\correct.txt");
-	    	ArrayList<String> dict = this.read("C:\\Users\\cliu20\\Downloads\\dict.txt");
+			ArrayList<String> misspell = this.read("misspell.txt");
+			ArrayList<String> correct = this.read("correct.txt");
+	    	ArrayList<String> dict = this.read("dict.txt");
 	    	
 	    	ArrayList<String> soundex_result = this.sdex(misspell, correct, dict);
 	    	
 	    	
-	    	File result = new File("C:\\Users\\cliu20\\Downloads\\result3.txt");
+	    	File result = new File("SOUNDEXresults.txt");
 	    	FileWriter fw = new FileWriter(result);
 	    	BufferedWriter bfw = new BufferedWriter(fw);
 	    	
